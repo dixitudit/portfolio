@@ -7,14 +7,28 @@ import {
 } from "../../styles/GlobalComponents";
 import Button from "../../styles/GlobalComponents/Button";
 import { LeftSection } from "./HeroStyles";
-import Typist from "react-typist";
+import Typewriter from "typewriter-effect";
 
 const Hero = () => (
   <Section row nopadding>
     <LeftSection>
       <SectionTitle main center>
         <span style={{ whiteSpace: "nowrap" }}>
-          Hi! I'm <Typist show={false}>Udit Narayan Dixit</Typist>
+          Hi! I'm{" "}
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString("Udit Narayan Dixit ")
+                .callFunction(() => {
+                  console.log("String typed out!");
+                })
+                .deleteChars(1)
+                .callFunction(() => {
+                  console.log("All strings were deleted");
+                })
+                .start();
+            }}
+          />
         </span>
       </SectionTitle>
       <br />
