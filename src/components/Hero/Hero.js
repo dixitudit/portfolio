@@ -35,8 +35,8 @@ const Hero = () => (
       <SectionText>
         Having Experties in JavaScript, React.js, Node.js, Express.js, MongoDB,
         Python, Java, C++, Data Structures and Algorithms, JWT, Docker,
-        Kubernetes, PostgreSql, MySql, Next.js, JSON, NPM, Insomnia, RESTful
-        APIs, Debugging, GIT, GitHub, HTML, CSS, Tailwind CSS and Much more.
+        PostgreSql, MySql, Next.js, JSON, NPM, Insomnia, RESTful APIs,
+        Debugging, GIT, GitHub, HTML, CSS, Tailwind CSS and Much more.
       </SectionText>
       <Button
         onClick={() => {
