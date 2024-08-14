@@ -7,7 +7,6 @@ import Technologies from "../components/Technologies/Technologies";
 import styled from "styled-components";
 import Timeline from "../components/TimeLine/TimeLine";
 import { Layout } from "../layout/Layout";
-import { Section } from "../styles/GlobalComponents";
 // import NewBgAnimation from "../components/BGani2/NewBackGroundAnimation";
 import CombinedAnimations from "../components/CombinedAnimations/CombinedAnimations";
 import SlideInProfileImage from "../components/ProfileImg/SlideInProfileImage";
