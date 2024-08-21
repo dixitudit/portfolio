@@ -11,6 +11,16 @@ export const projects = [
     id: 0,
   },
   {
+    title: "Chat-App",
+    description:
+      "This project is a Real-Time Chat Application built using Socket.IO, Express, and React. The application provides a seamless, real-time communication experience, allowing users to send and receive messages instantly, and interact with other users in real time.",
+    image: "/images/5.png",
+    tags: ["MERN ", " Socket.io ", " JWT ", "  "],
+    source: "https://github.com/dixitudit/Chat-App",
+    visit: "https://chat-app-2gnu.onrender.com/",
+    id: 1,
+  },
+  {
     title: "Corporate Recruitment System",
     description:
       "A website where recruiters can post jobs and select candidates. Candidates can apply to different jobs.",
@@ -18,7 +28,7 @@ export const projects = [
     tags: [" React.js ", " Express.js ", " MySQL "],
     source: "https://github.com/dixitudit/Corporate-Recruitment-System",
     visit: "#",
-    id: 1,
+    id: 2,
   },
   {
     title: "Social Media",
@@ -28,23 +38,17 @@ export const projects = [
     tags: [" Frontend ", " TailwindCSS ", " React.js ", " chakra-ui "],
     source: "https://github.com/dixitudit/SocialMedia",
     visit: "#",
-    id: 2,
+    id: 3,
   },
   {
     title: "RL-Agent for Space Invader",
     description:
       "This project make use of Reinforcement Learning particularly DQN algorithm to train on game environment built on pygame.",
     image: "/images/4.png",
-    tags: [
-      " Python ",
-      " Pygame ",
-      " DQN ",
-      " Reinforcement Learning ",
-      " Pytorch ",
-    ],
+    tags: [" Python ", " Pygame ", " DQN ", " RL ", " Pytorch "],
     source: "https://github.com/dixitudit/RL-Agent-for-simple2dGame",
     visit: "#",
-    id: 3,
+    id: 4,
   },
 ];
 
