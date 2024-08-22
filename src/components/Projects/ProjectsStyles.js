@@ -7,13 +7,15 @@ export const Img = styled.img`
   overflow: hidden;
 `;
 
+//TODO try to remove grid make it flex and centered
 export const GridContainer = styled.section`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  item-align: center;
+  justify-content: center;
   place-items: center;
-  column-gap: 3rem;
-  row-gap: 3rem;
+  column-gap: 5rem;
+  row-gap: 5rem;
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
     flex-direction: column;
@@ -24,7 +26,10 @@ export const GridContainer = styled.section`
 export const BlogCard = styled.div`
   border-radius: 10px;
   box-shadow: 4px 4px 12px rgba(80, 78, 78, 0.5);
+  padding: 3rem;
   text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
   width: 400px;
   opacity: 0.95;
   &:hover {
