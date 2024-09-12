@@ -13,19 +13,27 @@ import SlideInProfileImage from "../components/ProfileImg/SlideInProfileImage";
 
 const InnerContainerImg = styled.div`
   ${"" /* padding-left: 10%; */}
-  width: 60%;
+  display: flex;
+  width: 50%;
   height: 100%;
-
+  margin: 10%;
+  align-items: center;
+  ${"" /* border: 10px solid #fff; */}
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding-left: 0;
-    margin: auto;
-    width: 75%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 `;
 
 const SimpleContainer = styled.div`
   display: flex;
   justify: between;
+  aligh-items: center;
   width: 100%;
   @media ${(props) => props.theme.breakpoints.sm} {
     display: block;

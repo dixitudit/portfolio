@@ -8,7 +8,7 @@ const ImgContainer = styled.div`
   border: 10px solid #fff;
   overflow: hidden;
   padding-bottom: 40px;
-  margin: 20%;
+  ${"" /* margin-top: 20%; */}
   z-index: 1000;
 `;
 
