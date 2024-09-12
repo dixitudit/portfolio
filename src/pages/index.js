@@ -12,7 +12,7 @@ import CombinedAnimations from "../components/CombinedAnimations/CombinedAnimati
 import SlideInProfileImage from "../components/ProfileImg/SlideInProfileImage";
 
 const InnerContainerImg = styled.div`
-  padding-left: 10%;
+  ${"" /* padding-left: 10%; */}
   width: 60%;
   height: 100%;
 
@@ -26,7 +26,6 @@ const InnerContainerImg = styled.div`
 const SimpleContainer = styled.div`
   display: flex;
   justify: between;
-  margin-top: 5%;
   width: 100%;
   @media ${(props) => props.theme.breakpoints.sm} {
     display: block;
