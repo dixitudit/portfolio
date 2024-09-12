@@ -18,7 +18,7 @@ const InnerContainerImg = styled.div`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding-left: 0;
-    margin: 0 auto;
+    margin: auto;
     width: 75%;
   }
 `;
