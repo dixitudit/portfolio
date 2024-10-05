@@ -38,6 +38,7 @@ export const BlogCard = styled.div`
     box-shadow: 10px 10px 20px rgba(80, 78, 78, 0.5);
   }
   @media ${(props) => props.theme.breakpoints.sm} {
+    margin-left: 0;
     width: 100%;
   }
 `;
