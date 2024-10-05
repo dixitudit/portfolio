@@ -25,18 +25,46 @@ export const GridContainer = styled.section`
 `;
 export const BlogCard = styled.div`
   border-radius: 10px;
-  box-shadow: 4px 4px 12px rgba(80, 78, 78, 0.5);
   padding: 3rem;
   text-align: center;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin: 2rem;
   width: 400px;
   opacity: 0.95;
+  background: #1e1e1e; /* Initial background color */
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 2px solid transparent; /* Gradient border placeholder */
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  /* Adding a gradient border using pseudo-element */
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(135deg, #13b37f, #11a3c8, #f7ba2b);
+    z-index: -1;
+    filter: blur(2px);
+    border-radius: 10px;
+  }
+
   &:hover {
     color: #fff;
     opacity: 1;
     box-shadow: 10px 10px 20px rgba(80, 78, 78, 0.5);
+    transform: scale(1.05); /* Slight scaling on hover */
+    background: linear-gradient(
+      135deg,
+      #13b37f,
+      #11a3c8
+    ); /* Background color change */
   }
+
   @media ${(props) => props.theme.breakpoints.sm} {
     margin-left: 0;
     width: 100%;
@@ -78,9 +106,19 @@ export const CardInfo = styled.p`
   width: 100%;
   padding: 0 50px;
   color: #e4e6e7;
-  font-style: 2rem;
-  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 1.5;
   text-align: justify;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.05
+  ); /* Light background for readability */
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.3rem;
   }
