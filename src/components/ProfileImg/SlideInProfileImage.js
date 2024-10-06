@@ -43,7 +43,7 @@ const ImgContainer = styled.div`
   height: 330px;
   width: 270px;
   border-radius: 30px;
-  border: 10px solid #fff;
+  ${'' /* border: 10px solid #fff; */}
   position: relative;
   padding-bottom: 40px;
   ${"" /* margin-top: 20%; */}
